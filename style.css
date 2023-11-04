@@ -1,0 +1,145 @@
+.heading_font{
+    font-size: 14px;
+}
+.explore_plus_logo{
+    padding-left: 58px;
+    font-style: italic;
+}
+.wrapper{
+    max-height: 200px;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+   }
+   .wrapper .items{
+       min-width: 80px;
+       height: 110px;
+       line-height: 75px;
+       margin-left: 45px;
+       text-align: center;
+       white-space: nowrap;
+       
+   }
+   .wrapper .items h6{
+    font-size: 14px;
+    font-weight: 600;
+   }
+::-webkit-scrollbar{
+    display: none;
+}
+.mobile_box_div{
+    width:220px;
+    height: fit-content;
+   
+}
+.wrapper_mobile{
+    overflow: hidden;
+    
+}
+.wrapper_mobile ul{
+    list-style: none;
+    overflow-x: auto;
+    min-width: 300px;
+
+   
+}
+.wrapper_mobile ul li{
+    padding-left: 14px;
+    cursor: pointer;
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .card-offer_img{
+        width: 120px;
+        gap: 0;
+        margin-left:2px;
+    }
+  .card-offer ul{
+    gap: 2px;
+  }
+  .wrapper_mobile_img{
+    width: 100px;
+  }
+  .wrapper_mobile li div{
+    width: 150px;
+  }
+  .wrapper_mobile ul{
+   max-width: 100%;
+   
+  }
+  .search_bar_control{
+    width: 50%;
+  }
+  }
+  .search_bar{
+    width: 50%;
+  }
+  .search_bar_control{
+    width: 55%;
+  }
+
+  /* top deals */
+  .wrapper2{
+    max-height: 350px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.wrapper2 .item{
+    min-width: 200px;
+    height: 285px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+    text-align: center;
+    white-space: nowrap;
+    
+}
+.item img{
+    width: 100%;
+}
+
+.main_footer{
+    margin-top: 150px;
+    color: #565656;
+}
+.Font_title{
+    font-size: 16px;
+}
+.font_content{
+    font-size: 12px;
+}
+.font_content_main{
+    font-size: 14px;
+}
+.top-brand{
+    line-height: 20px;
+}
+.footer_ul a{
+    color: white;
+}
+.footer_ul a li{
+    font-weight: 700;
+}
+.footer_ul h6{
+    font-size: 12px;
+    color: #777f73;
+}
+.designation{
+    color: #878787;
+}
+.font_content_1{
+    font-size: 12px;
+    line-height: 17px;
+}
+.footer_section_2{
+    color: #fff;
+    font-size: 12px;
+    background-color: #212121;
+}
+.footer_last_part h6{
+    font-size: 12px;
+    white-space: none;
+}
+.footer_social h6{
+    font-size: 12px;
+    color: #777f73;
+}

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flipkart-clone</title>
+        <link rel="stylesheet" href="style.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body class="bg-body-tertiary">
+        <div class="main">
+            <nav class="navbar navbar-expand-lg bg-white h-auto">
+                <div class="container-fluid">
+                   <div>
+                        <img class="me-3"
+                            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/flipkart-095e08.svg"
+                            alt>
+                            <h6 class="explore_plus_logo ">Explore <span class="text-warning">Plus </span><img  src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/plus-brand-bc165b.svg" alt=""></h6>
+                   </div>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse"
+                        id="navbarSupportedContent">
+                        <div class="row search_bar_control;" style="width: 65%;">
+                            <div class="search_bar col-sm-12">
+                                <form class="d-flex collapse navbar-collapse" role="search" id="navbarSupportedContent">
+                                    <input
+                                        class="form-control me-2 flex justify-content-center search_bar bg-light"
+                                        type="search"
+                                        placeholder="Search for Product,brands and more"
+                                        aria-label="Search">
+                                </form>
+                            </div>
+                        </div>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-black ">
+                            <li class="nav-item ms-2">
+
+                                <a class="nav-link active" aria-current="page"
+                                    href="#"><i class="fa-solid fa-shop"></i><span
+                                        class="ms-2">Become a Seller</span></a>
+                            </li>
+                            <li class="nav-item dropdown ms-3">
+                                <a class="nav-link dropdown-toggle text-black"
+                                    href="#" role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa-solid fa-user"></i><span
+                                        class="ms-3">Account</span>
+                                </a>
+                                <ul class="dropdown-menu text-black">
+                                    <li><a class="dropdown-item" href="#">My Profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Orders
+                                            action</a></li>
+                                    <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item ms-3">
+                                <a class="nav-link text-black" href="#"><i
+                                        class="fa-solid fa-cart-shopping"></i><span
+                                        class="ms-2">Cart</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Category_section -->
+            <section>
+                <div class="wrapper  d-flex text-center">
+                    <div class="items ms-3">
+                        <img width="55px" src="./img/offer.png" alt="">
+                        <h6>offer</h6>
+                    </div>
+                    <div class="items ">
+                        <img width="55px" src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/f8f98743e2ad89f6.jpg?q=100" alt="">
+                        <h6>Furniture</h6>
+                    </div>
+                    <div class="items ">
+                        <img width="55px" src="./img/mobile.png" alt="">
+                        <h6>Mobile & Tablets</h6>
+                    </div>
+                    <div class="items ">
+                        <img width="55px" src="./img/lap.png" alt="">
+                        <h6>Electronics</h6>
+                    </div>
+                    <div class="items  ">
+                        <img width="55px" src="./img/tv.png" alt="">
+                        <h6>TV & Appliances</h6>
+                    </div>
+                    <div class="items">
+                        <img width="55px" src="./img/fashion.png" alt="">
+                        <h6>Fashion</h6>
+                    </div>
+                    <div class="items">
+                        <img width="55px" src="./img/Beauty.png" alt="">
+                        <h6>Beauty</h6>
+                    </div>
+                    <div class="items">
+                        <img width="55px" src="./img/home.png" alt="">
+                        <h6>Home & Kitchen</h6>
+                    </div>
+                    <div class="items">
+                        <img width="55px" src="./img/flight.png" alt="">
+                        <h6>Flight</h6>
+                    </div>
+                    <div class="items">
+                        <img width="55px" src="./img/grocery.png" alt="">
+                        <h6>Grocery</h6>
+                    </div>
+                </div>
+           </section>
+
+            <!-- carousel_section -->
+            <section>
+                <div class="mt-3 container-fluid">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <!-- <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="6" aria-label="Slide 7"></button>
+
+                          </div> -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/01d585fee99375e8.png?q=20" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/ffeb169a27907387.jpg?q=20" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/ba6df9a13bceb634.jpeg?q=20" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/db13b73370c79d54.png?q=20" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/bb35af7b3673ec73.jpeg?q=20" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/78f0374b0191d762.jpg?q=20" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </section>
+            <!-- Discount-Image/offers -->
+            <section>
+                <div class="container-fluid mt-2">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/140/image/9ee27aa0c23e89ac.jpg?q=20" class="d-block w-100" alt="...">
+                          </div>
+                      </div>
+                </div>
+            </div>
+            </section>
+
+            <!-- Best Mobiles -->
+            <section>
+                <div class="container-fluid bg-white mt-3 me-3 ">
+                    <h4>Best Mobiles</h4>
+                    <div class="wrapper_mobile ms-1 d-flex mt-4 ">
+                       <ul class="d-flex  ps-2">
+                        <li>
+                            <div class=" border rounded-1  mobile_box_div d-flex flex-column justify-content-center text-center align-content-center">
+                                <div class="w-100 pt-3"><img class=" wrapper_mobile_img" width="180px" src="https://www.etoren.com/upload/images/0.06570800_1678152349_xiaomi-poco-x5-pro-5g-dual-sim-256gb-yellow-8gb-ram-global-version.jpg" alt=""></div>
+                                <p class=" mt-2 ">Poco X5 pro 5G</p>
+                                <p class="fw-semibold">incl of offers</p>
+                               </div>
+                        </li>
+                        <li>
+                            <div class=" border rounded-1  mobile_box_div d-flex flex-column justify-content-center text-center align-content-center">
+                                <div class="w-100 pt-3"><img class="wrapper_mobile_img " width="180px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Gdu11rNwslVrT1U8rQd6XpObeyMNB2GQmQ&usqp=CAU" alt=""></div>
+                                <p class=" mt-2 ">Redmi 12</p>
+                                <p class="fw-semibold">incl of offers</p>
+                               </div>
+                        </li>
+                        <li>
+                            <div class=" border rounded-1  mobile_box_div d-flex flex-column justify-content-center text-center align-content-center">
+                                <div class="w-100 pt-3"><img class="wrapper_mobile_img " width="180px" src="https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/9/i/x/edge-40-pay40029in-motorola-original-imagpqzcmuz7yzhx.jpeg?q=90" alt=""></div>
+                                <p class=" mt-2 ">Motorola edge 40</p>
+                                <p class="fw-semibold">incl of offers</p>
+                               </div>
+                        </li>
+                        <li>
+                            <div class=" border rounded-1  mobile_box_div d-flex flex-column justify-content-center text-center align-content-center">
+                                <div class="w-100 pt-3"><img class="wrapper_mobile_img " width="180px" src="https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/0/v/o/-original-imagth5xdvsmprdd.jpeg?q=90" alt=""></div>
+                                <p class=" mt-2 ">Samsung s22 5G</p>
+                                <p class="fw-semibold">incl of offers</p>
+                               </div>
+                        </li>
+                        <li>
+                            <div class=" border rounded-1  mobile_box_div d-flex flex-column justify-content-center text-center align-content-center">
+                                <div class="w-100 pt-3 mt-2"><img class="wrapper_mobile_img " width="180px" src="https://i.gadgets360cdn.com/products/large/realme-11-pro-plus-realme-db-1-661x800-1683725752.jpg?downsize=*:360" alt=""></div>
+                                <p class=" mt-2 ">Realme 11 pro +</p>
+                                <p class="fw-semibold">incl of offers</p>
+                               </div>
+                        </li>
+                        <li>
+                            <div class=" border rounded-1  mobile_box_div d-flex flex-column justify-content-center text-center align-content-center">
+                                <div class="w-100 pt-3"><img class=" wrapper_mobile_img" width="180px" src="https://cdn1.smartprix.com/rx-iaq6pAjBb-w1200-h1200/aq6pAjBb.jpg" alt=""></div>
+                                <p class=" mt-2 ">Iphone 15 pro max</p>
+                                <p class="fw-semibold">incl of offers</p>
+                               </div>
+                        </li>
+                       </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- card-offer -->
+            <section>
+                <div class="container-fluid bg-white mt-3">
+                    <div class="w-100 card-offer overflow-hidden">
+                        <ul class="list-unstyled d-flex justify-content-evenly  d-inline-block">
+                            <li><img class="card-offer_img" width="400px" src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/ff5fe829530cf197.jpg?q=20" alt=""></li>
+                            <li><img class="card-offer_img" width="400px" src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/07b437dc74cb4f25.jpg?q=20" alt=""></li>
+                            <li><img class="card-offer_img" width="400px" src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/001d5002a4adeeaf.jpg?q=20" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- top deals -->
+            <section class=" mt-3">
+                <div class="container-fluid ">
+                    <div class="bg-white">
+                        <h5 class="ms-4  pt-4">Top Deals</h5>
+                        <div class=" wrapper2 d-flex p-3 bg-white">
+                            <div class="item p-2">
+                                <img    src="https://5.imimg.com/data5/SELLER/Default/2022/8/PX/EZ/BU/12982737/whatsapp-image-2022-08-04-at-3-45-25-pm-500x500.jpeg" alt="">
+                                <h6 class="pt-3 fw-normal">Best Seller</h6>
+                                <p class="fw-semibold fs-6">Under ₹599</p>
+                            </div>
+                            <div class="item p-2">
+                                <img  src="https://5.imimg.com/data5/SELLER/Default/2020/8/VF/OH/WG/64760880/reebok-daily-wear-mens-slippers.jpg" alt="">
+                                <h6 class="pt-4 fw-normal">Reebok, Campus & More</h6>
+                                <p class="fw-semibold fs-6">Under ₹599</p>
+                            </div>
+                            <div class="item p-2">
+                                <img    src="https://images-static.nykaa.com/media/catalog/product/b/f/bfc68b2P357BK1_1.jpg?tr=w-500,pr-true" alt="">
+                                <h6 class="pt-3 fw-normal">Fastrack, Ray-Ban, IDEE...</h6>
+                                <p class="fw-semibold fs-6">30-80% Off</p>
+                            </div>
+                            <div class="item p-2">
+                                <div class="w-100"><img    src="https://images-static.nykaa.com/media/catalog/product/c/0/c001445FT_SKEAA00035037_1.jpg?tr=w-500,pr-true" alt=""></div>
+                                <h6 class="pt-3 fw-normal">Skechers</h6>
+                                <p class="fw-semibold fs-6">Min. 60% Off</p>
+                            </div>
+                            <div class="item p-2">
+                                <img    src="https://5.imimg.com/data5/SELLER/Default/2023/1/BX/DY/VC/7633002/men-oversized-tshirts-500x500.jpg" alt="">
+                                <h6 class="pt-3 fw-normal">T.shirts,pants & more</h6>
+                                <p class="fw-semibold fs-6">Flat 70% Off</p>
+                            </div>
+                            <div class="item p-2">
+                                <img    src="https://www.verrnon.com/image/cache/catalog/Joggers/verrnon_jogger%20s_for_men_image_size_500X500_px-500x500.jpg" alt="">
+                                <h6 class="pt-3 fw-normal">Jogger Pants</h6>
+                                <p class="fw-semibold fs-6">Min 70% Off</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </section>
+
+               <!-- mobile offers -->
+               <section>
+                <div class="container-fluid bg-white mt-3">
+                    <div class="w-100 card-offer overflow-hidden">
+                        <ul class="list-unstyled d-flex justify-content-evenly  d-inline-block">
+                            <li><img class="card-offer_img" width="400px" src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/8e706d5a2c7967f2.jpg?q=20" alt=""></li>
+                            <li><img class="card-offer_img" width="400px" src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/c4099de7a5297e8c.jpg?q=20" alt=""></li>
+                            <li><img class="card-offer_img" width="400px" src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/a5170a21b3082183.jpg?q=20" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- top Elctronics -->
+            <section class=" mt-3">
+                <div class="container-fluid ">
+                    <div class="bg-white">
+                        <h5 class="ms-4  pt-4">Top Deals on Electronics</h5>
+                        <div class=" wrapper2 d-flex p-3 bg-white">
+                            <div class="item p-2">
+                                <img    src="https://5.imimg.com/data5/SELLER/Default/2023/10/355529138/SC/PX/LU/25006117/oneplus-buds-pro-2-bluetooth-tws-in-ear-earbuds-500x500.jpeg" alt="">
+                                <h6 class="pt-3 fw-normal">Headphones & More</h6>
+                                <p class="fw-semibold fs-6">From ₹499</p>
+                            </div>
+                            <div class="item p-2">
+                                <img  src="https://5.imimg.com/data5/SELLER/Default/2022/10/ZY/VQ/EA/43150781/815knp2wjds-sl1500--500x500.jpg" alt="">
+                                <h6 class="pt-4 fw-normal">iPad 9th Gen</h6>
+                                <p class="fw-semibold fs-6">Just ₹22,749*</p>
+                            </div>
+                            <div class="item p-2">
+                                <img    src="https://m.media-amazon.com/images/I/41LIdTRD0aL.jpg" alt="">
+                                <h6 class="pt-3 fw-normal">Top Smartwatch Deals</h6>
+                                <p class="fw-semibold fs-6">From ₹899</p>
+                            </div>
+                            <div class="item p-2">
+                                <div class="w-100"><img    src="https://www.boat-lifestyle.com/cdn/shop/files/ES500-FI_Black01__2_-removebg-preview_500x.png?v=1690195217" alt=""></div>
+                                <h6 class="pt-3 fw-normal">Best Of Powerbanks</h6>
+                                <p class="fw-semibold fs-6">From ₹499</p>
+                            </div>
+                            <div class="item p-2">
+                                <img    src="https://static-ecapac.acer.com/media/catalog/product/b/a/bak1_1_1_1.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=500&width=500&canvas=500:500" alt="">
+                                <h6 class="pt-3 fw-normal">Top Deals on Acer Monitors</h6>
+                                <p class="fw-semibold fs-6">From ₹5,299</p>
+                            </div>
+                            <div class="item p-2">
+                                <img    src="https://5.imimg.com/data5/SELLER/Default/2023/6/320793659/XT/OW/PC/142158492/canon-pixma-g3010-all-in-one-wireless-ink-tank-color-printerconverters-500x500.jpg" alt="">
+                                <h6 class="pt-3 fw-normal">Top Canon Printers</h6>
+                                <p class="fw-semibold fs-6">From ₹2,299</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </section>
+        </div>
+
+        <!-- ref -->
+         <section>
+            <div class="container-fluid bg-white mt-3">
+                <div class="w-100 card-offer overflow-hidden">
+                    <ul class="list-unstyled d-flex justify-content-evenly  d-inline-block">
+                        <li><img class="card-offer_img" width="400px" src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/66a95f7b8a2de8d0.jpg?q=20" alt=""></li>
+                        <li><img class="card-offer_img" width="400px" src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/5549c8378ebc39ec.jpg?q=20" alt=""></li>
+                        <li><img class="card-offer_img" width="400px" src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/62f485577d8e3f7c.jpg?q=20" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Directory -->
+        <footer>
+            <div class="main_footer container-fluid mt-5 ">
+                <div class="top-brand">
+                    <h6 class="Font_title fw-semibold">Top Brand Directory</h6>
+                    <div class="mt-3">
+                        <p class="font_content"><span class="font_content_main">MOST SEARCHED FOR ON FLIPKART: </span> iPhone 14 | iPhone 15 | spoyl store I SAMSUNG Galaxy Z Flips I SAMSUNG Galaxy Z Fcld5 1 Flipkart Axis Bank super Elite Credit card | 50 Mobile Phones I Primebook Laptops I Moto
+                            Edge 40 | Grievance Redressal I oppo Ren07 Pro 50 | iPhone 13 | Help Centre I Track Orders I Manaqe Orders I Return Orders I Gift Cards Store I Flipkart Axis Bank Credit card I Pay Later</p>
+                    </div>
+                    <div class="">
+                        <p class="font_content"><span class="font_content_main">MOBILES: </span> iPhone 12 64GB I iPhone 12 Pro 512GB I iPhone 12 1286B I Vivo Y15 1 SAMSUNG Galaxy S21 FE 5G I Infinix HOT 30i I Realme 10 Pro 5G I MOTOROLA G62 50 | Nothing Phone I REDMI Note 12 Pro 5G I Infinix SMAR
+                            7 | Vivo Y 12 | Oppo A12 1 Motorola 5g Phone I Realme 5g Smartphone I Apple 5g Phone I Iqoo 5g Phones I Oneplus 5g Phones I Vivo Sg Phones I Oppo 5g Smart Phones I Oppo F15 1 Oppo A31 1 Samsung A71 1 Samsung
+                            A51 1 Samsung A31 1 iPhone 11 | iPhone 11 Pro 1 4G Mobile I Nokia Mobile I Samsung Mobile I iphone I Oppo Mobile I Vivo Mobile</p>
+                    </div>
+                    <div class="">
+                        <p class="font_content"><span class="font_content_main">CAMERA: </span> GoPro Action Camera I Nikon Camera I Canon Camera I Sony Camera I Canon DSLR I Nikon DSLR</p>
+                    </div>
+                    <div class="">
+                        <p class="font_content"><span class="font_content_main">LAPTOPS: </span>Asus ROG Ally I MacBook Pro M2 1 Premium Laptop I ASUS ROG strix SCAR 16 (2023) Core ig 13th Gen I ASUS ROG Zephyrus M16 (2023) Core ig 13th Gen I ASUS Zenbook 14 OLED (2022) | Realme Book Prime Core i5
+                            11th Gen I Microsoft Surface Go Pentium 128GB I Apple Laptops I Acer Laptops I Lenovo Laptops I Dell Laptops I Asus Laptops I HP Laptops I Gaming Laptops | 2 in 1 Laptops I Laptops I Dell latest laptops 2022 | HP latest laptops
+                            2022 | Infinix INBook Yl Plus I SAMSUNG Galaxy Book3 1 12th Gen Intel core Laptops</p>
+                    </div>
+                </div>
+                <div class="designation mt-5">
+                    <h6 class="Font_title fw-semibold">Flipkart: The One-stop Shopping Destination</h6>
+                    <div>
+                        <p class="font_content_1">E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses
+                            everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa
+                            sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers,
+                            mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in
+                            your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.</p>
+                            <p class="font_content_1">What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when
+                                there are multiple options available to you, well, the below will answer your question.</p>
+                    </div>
+                    <h6 class="Font_title fw-semibold">Flipkart Plus</h6>
+                    <div>
+                        <p class="font_content_1">A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every
+                            100 rupees spent on Flipkart order, Plus members earns 4 supercoins 8 non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the
+                            '-op benefits to a Flipkart Plus member. In short, earn more when you shop more!</p>
+                            <p class="font_content_1">What's more, you can even use the Flipkart supercoins for a number of exciting services, like: <br>
+                                An annual Zomato Gold membership<br>
+                                An annual Hotstar Premium membership<br>
+                                6 months Gaana plus subscription<br>
+                                Rupees 550 instant discount on flights on ixigo<br>
+                                Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.</p>
+                    </div>
+                    <h6 class="Font_title fw-semibold">No Cost EMI</h6>
+                    <div>
+                        <p class="font_content_1">In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances,
+                            furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions
+                            apply.</p>
+                    </div>
+                    <h6 class="Font_title fw-semibold">EMI On Debit Cards</h6>
+                    <div>
+                        <p class="font_content_1">Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone,
+                            Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and
+                            ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer>
+            <div class="footer_section_2 container-fluid">
+                <div class="row">
+                    <div class="col-lg-6  d-flex justify-content-lg-evenly  mt-5 ps-4 footer_ul">
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-3">
+                                <h6>About</h6>
+                                <ul class="list-unstyled ">
+                                    <a class="text-decoration-none" href=""><li>contact us</li></a>
+                                    <a class="text-decoration-none" href=""><li>About us</li></a>
+                                    <a class="text-decoration-none" href=""><li>careers</li></a>
+                                    <a class="text-decoration-none" href=""><li>Flipkart Stories</li></a>
+                                    <a class="text-decoration-none" href=""><li>Press </li></a>
+                                    <a class="text-decoration-none" href=""><li>Flipkarts Wholesale</li></a>
+                                    <a class="text-decoration-none" href=""><li>Cleartrip </li></a>
+                                </ul>
+                            </div>
+                            <div class="col-sm-12 col-lg-3">
+                                <h6>Help</h6>
+                                <ul class="list-unstyled">
+                                    <a class="text-decoration-none" href=""><li>Payments</li></a>
+                                    <a class="text-decoration-none" href=""><li>Shipping</li></a>
+                                    <a class="text-decoration-none" href=""><li>careers</li></a>
+                                    <a class="text-decoration-none" href=""><li>Cancellation & returns</li></a>
+                                    <a class="text-decoration-none" href=""><li>FAQ</li></a>
+                                    <a class="text-decoration-none" href=""><li>Report Infrigment</li></a>
+                                </ul>
+                            </div>
+                            <div class="col-sm-12 col-lg-3">
+                                <h6>Consumer policy</h6>
+                                <ul class="list-unstyled">
+                                    <a class="text-decoration-none" href=""><li>Cancellation & Returns</li></a>
+                                    <a class="text-decoration-none" href=""><li>Term of use</li></a>
+                                    <a class="text-decoration-none" href=""><li>Security</li></a>
+                                    <a class="text-decoration-none" href=""><li>Privacy</li></a>
+                                    <a class="text-decoration-none" href=""><li>Sitemap </li></a>
+                                    <a class="text-decoration-none" href=""><li>Grievance Ridressal</li></a>
+                                    <a class="text-decoration-none" href=""><li>EPR Compilance </li></a>
+                                </ul>
+                            </div>
+                            <div class="col-sm-12 col-lg-3">
+                                <h6>Social</h6>
+                                <ul class="list-unstyled">
+                                    <a class="text-decoration-none" href=""><li>Facebook</li></a>
+                                    <a class="text-decoration-none" href=""><li>Twitter</li></a>
+                                    <a class="text-decoration-none" href=""><li>Youtube</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6  mt-5 ps-4 footer_social">
+                       <div class="row ">
+                            <div class="col-sm-12 col-md-12 col-lg-6 border-start">
+                                <h6 class="">Mail Us:</h6>
+                                <p class="">Flipkart Internet Private Limited,<br>
+                                    Buildings Alyssa, Begonia & <br>
+                                    Clove Embassy Tech Village, <br>
+                                    Outer Ring Road, Village, <br>
+                                    Bengaluru. 560103, <br>
+                                    Kamataka. India</p>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                                <h6>Register Office Address</h6>
+                                <p>Flipkart Intemet Private Limited,<br>
+                                    Buildings Alyssa, Begonia &<br>
+                                    Clove Embassy Tech Village,<br>
+                                    Outer Ring Road, Devarabeesanahalli Village,<br>
+                                    Bengaluru. 560103,<br>
+                                    Karnataka, India<br>
+                                    CIN : U51109KA2012PTC066107<br>
+                                    Telephone:
+                                    <span class="text-info">044-45614700</span></p>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-sm-1 border-top">
+                        <div class=" row d-flex  footer_last_part mt-4 w-100 d-flex justify-content-center ">
+                            <div class="col-sm-12 col-lg-2 d-flex ">
+                                <p class="">Become a Seller</p>
+                            </div>
+                            <div class="col-sm-12 col-lg-2 footer_last_part_box">
+                                <h6>Advertise</h6>
+                            </div>
+                            <div class="col-sm-12 col-lg-2 footer_last_part_box">
+                                <h6>Gift Card</h6>
+                            </div>
+                            <div class="col-sm-12 col-lg-1 footer_last_part_box">
+                                <h6>Help Center</h6>
+                            </div>
+                            <div class="col-sm-12 col-lg-2 footer_last_part_box">
+                                <h6>&copy;2007-2023 Flipkart.com</h6>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 visa_card d-flex justify-content-center">
+                                <img width="200px" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <h6 style="font-size: 12px;">&copy;Clone by Jabaraj</h6>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- script -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
